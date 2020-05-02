@@ -43,7 +43,8 @@ body{
     padding-right: 8px;
     border-radius: 20px;
     color: honeydew;
-    background: linear-gradient(rgb(77, 3, 119), rgb(89, 0, 255));
+    /* background: linear-gradient(rgb(77, 3, 119), rgb(89, 0, 255)); */
+    background: linear-gradient(rgba(10, 194, 226, 0.726), rgba(89, 0, 255, 0.753));
     box-shadow: 3px 3px 8px 1px rgb(54, 54, 54);
 }
 .dashBtn:hover{
