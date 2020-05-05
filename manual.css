@@ -1,0 +1,4 @@
+.manualContext:after{
+    /* write the content of first page notice inside double quotes below */
+    content: "AM Classes suspended all the classes from 8 to 12 due to Lockdown - Stay Home, Stay Safe.";
+}
