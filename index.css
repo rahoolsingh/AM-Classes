@@ -114,8 +114,9 @@ body{
 }
 .content{
     font-weight: 100;
-    font-size: 18px;
+    font-size: 19px;
     font-family: Cursive;
+    font-weight: bold;
     padding: 10px;
     padding-top: 0;
     padding-bottom: 0;
