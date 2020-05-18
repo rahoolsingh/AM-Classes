@@ -6,6 +6,28 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
 }
+.blink_box span {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: black;
+    font-weight: bold;
+}
+.blink_box{
+    padding: 5px;
+    padding-top: 4px;
+    background: yellow;
+    width: 100vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.247);
+    margin: auto;
+    margin-top: 0px;
+}
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
 .heading{
     background: linear-gradient(red, #ff512f);
     color: white;
@@ -381,6 +403,7 @@ a{
 .highlight{
     margin-top: -4px;
     display: flex;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.267);
 }
 .notice{
     background: linear-gradient(rgb(0, 0, 0), rgb(75, 75, 77));
