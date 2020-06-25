@@ -1,5 +1,6 @@
 .siteUpdate:after{
      font-weight: bold;
+     font-size: small;
      content:" | Updated on : 25 June 2020";
 }
 .manualContext:after{
