@@ -1,7 +1,7 @@
 .siteUpdate:after{
      font-weight: bold;
      font-size: xx-small;
-     content:" | SITE UPDATED ON : 25 June 2020";
+     content:" (SITE UPDATED ON : 25 June 2020)";
 }
 .manualContext:after{
     /* write the content of first page notice inside double quotes below */
