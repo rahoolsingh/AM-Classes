@@ -1,4 +1,4 @@
-.site Update:after{
+.siteUpdate:after{
      font-weight: bold;
      content:" | Updated on : 25 June 2020";
 }
