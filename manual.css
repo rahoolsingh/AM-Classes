@@ -1,11 +1,11 @@
 .siteUpdate:after{
      font-weight: bold;
      font-size: xx-small;
-     content:" (SITE UPDATED ON : 25 June 2020)";
+     content:" (SITE UPDATED ON : 26 June 2020)";
 }
 .manualContext:after{
     /* write the content of first page notice inside double quotes below */
-    content:"Download NEW Stable APP | CBSE 10th & 12th Board Exams 2020 scheduled for July have been Cancelled. CBSE may Publish the Board Result before 20th July.";
+    content:"Check CBSE Notification Below | Download NEW Stable APP | CBSE 10th & 12th Board Exams 2020 scheduled for July have been Cancelled. CBSE may Publish the Board Result before 20th July.";
 }
 .apkVersion:after{
      font-weight: bold;
