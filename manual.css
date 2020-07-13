@@ -5,7 +5,7 @@
 }
 .manualContext:after{
     /* write the content of first page notice inside double quotes below */
-    content:"Check CBSE Notification Below | Download NEW Stable APP | CBSE 10th & 12th Board Exams 2020 scheduled for July have been Cancelled. CBSE may Publish the Board Result before 20th July.";
+    content:" CBSE 12th Result 2020 Declared: Check on cbseresults.nic.in ";
 }
 .apkVersion:after{
      font-weight: bold;
