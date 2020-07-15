@@ -1,11 +1,11 @@
 .siteUpdate:after{
      font-weight: bold;
      font-size: xx-small;
-     content:" (SITE UPDATED ON : 13 July 2020)";
+     content:" (SITE UPDATED ON : 15 July 2020)";
 }
 .manualContext:after{
     /* write the content of first page notice inside double quotes below */
-    content:" CBSE 12th Result 2020 Declared: Check on cbseresults.nic.in ";
+    content:"CBSE 10th Result 2020 to be Announced Shortly | CBSE 12th Result 2020 Declared: Check on cbseresults.nic.in ";
 }
 .apkVersion:after{
      font-weight: bold;
