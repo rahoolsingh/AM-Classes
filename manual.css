@@ -5,14 +5,12 @@
 }
 .manualContext:after{
     /* write the content of first page notice inside double quotes below */
-    content:"CBSE 10th Result 2020 to be Announced Shortly | CBSE 12th Result 2020 Declared: Check on cbseresults.nic.in ";
+    content:"CBSE 10th Result 2020 also Declared - Check Now | CBSE 12th Result 2020 Declared: Check on cbseresults.nic.in ";
 }
 .apkVersion:after{
      font-weight: bold;
      content:"Version : 2.4 | Released on : 26 June 2020";
 }
-.blink_box{
-     span:after{
+.blinking:after{
           content:"CBSE 10th Result 2020 to be Announced Shortly";
-     }
 }
