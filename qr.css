@@ -43,13 +43,15 @@ button:hover{
 }
 .popup{
     background-color: white;
-    width: 70vw;
-    max-width: 600px;
+    width: 100vw;
+    height: 100vh;
+    /* max-width: 600px; */
 
     padding: 20px;
+    left: -2px;
     position:fixed;
-    top: 20px;
-    margin: auto;
+    top: -2px;
+    /* margin: auto; */
     text-align: center;
 }
 .hide{
