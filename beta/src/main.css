@@ -54,8 +54,8 @@ body{
     /* text-align: center; */
 }
 .logo{
-    height: 10vw;
-    max-height: 100px;
+    width: 100vw;
+    max-width: 800px;
     margin: auto;
     padding: 5px;
 }
@@ -84,7 +84,7 @@ body{
     margin: 10px;
 }
 .dash-text{
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .dash-text h4{
     margin: 0%;
@@ -102,7 +102,7 @@ body{
 td{
     font-size: 80%;
     font-weight: bold;
-    opacity: 80%;
+    /* opacity: 80%; */
 }
 td h1{
     margin: 0%;
@@ -120,9 +120,9 @@ td h1{
 .dash-table .ext{
     background-color: #0EC9C4;
 }
-.reg:hover{
+/* .reg:hover{
     background-color: black;
-}
+} */
 .app{
     text-align: center;
     width: 100%;
