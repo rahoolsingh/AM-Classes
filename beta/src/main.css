@@ -5,6 +5,8 @@ body{
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
 }
 .background{
     width: 100vw;
