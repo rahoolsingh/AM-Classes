@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="src/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Classes, Kathara | Best Coaching Institute in Your Area</title>
+    <style type="text/css">
+  .mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+</style>
+    <style type="text/css">
+        .mobileHide { display: inline; }
+      
+        /* Smartphone Portrait and Landscape */
+        @media only screen
+          and (min-device-width : 320px)
+          and (max-device-width : 480px){
+           .mobileHide { display: none;}
+        }
+      </style>
+</head>
+
+<body 
+    style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
+    unselectable="on" onselectstart="return false;" onmousedown="return false;">
+
+    <header class="nav">
+        <img class="logo" src="src/logo new.png">
+    </header>
+
+    <div class="mobileHide" style="color: red;"> 
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Warning!</strong> This is a mobile only site. Please open url on mobile device or download our app.
+          </div>
+    </div>
+
+    <div class="heros mobileShow">
+        <img src="src/hero/hero 1.jpeg">
+        <div class="hero-nav">
+            <h3>* * * * *</h3>
+        </div>
+    </div>
+    <div class="dash">
+        <div class="dash-text">
+            <h4>Admission for classes 8 - 12 is available</h4>
+        </div>
+        <span>
+            <table class="dash-table" table-layout="fixed">
+                <tr>
+                    <td class="ext reg" colspan="2" onclick="location.href='https://zfrmz.in/ptiTSO19N1pxfdjTAaAU'">
+                        <h1>Register Now</h1>
+                    </td>
+                    <td style="background-color: rgb(156, 2, 2);">Class Schedule</td>
+                    <td style="background-color: rgb(0, 38, 255);">Fee Structure</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(255, 81, 0);">About Us</td>
+                    <td style="background-color: rgb(255, 0, 200);">Our Vision</td>
+                    <td style="background-color: rgb(15, 158, 2);">Founder's Message</td>
+                    <td style="background-color: rgb(255, 60, 0);">Mentor's Details</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(0, 195, 255);">Old Results</td>
+                    <td style="background-color: rgb(124, 6, 192);">Gallery</td>
+                    <td style="background-color: rgb(216, 152, 3);">Contact Us</td>
+                    <td style="background-color: rgb(0, 0, 0);" class="ext">Student's Dashboard</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(255, 0, 0); font-size: larger; text-align: center;" colspan="2">Complaint</td>
+                    <td style="background-color: rgb(6, 65, 192); font-size: larger; text-align: center;" colspan="2">Feedback</td>
+                </tr>
+            </table>
+        </span>
+    </div>
+    <div class="app">
+        <h4>Download our Android app - <a href="https://bit.ly/am_kta_app">click here</a></h4>
+    </div>
+
+    <div style="height: 200px; width: 100vw;">
+        <!-- spacing -->
+    </div>
+
+
+
+    <footer>
+        <p id="wish" class="wish"></p>
+        <table class="notice">
+            <tr class="notice-block">
+                <td class="notice-cell">
+                    <h4>Notice:</h4>
+                </td>
+                <td class="notice-text">
+                    <h4>
+                        <marquee>Latest Fee Structure is uploaded on 31/03/2021</marquee>
+                    </h4>
+                </td>
+
+            </tr>
+        </table>
+    </footer>
+
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 5) {
+            greeting = "Hey, Are you a ghost? 👻";
+        } else if (time < 7) {
+            greeting = "Hello, Early Bird! 🐔";
+        } else if (time < 12) {
+            greeting = "Good Morning, Students! 🥱";
+        } else if (time < 18) {
+            greeting = "Good Afternoon, Students! 👋";
+        } else {
+            greeting = "Good Evening, Students! 🌙";
+        }
+        document.getElementById("wish").innerHTML = greeting;
+    </script>
+
+    <style type="text/css">
+        .mobileShow {
+            display: none;
+        }
+
+        /* Smartphone Portrait and Landscape */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .mobileShow {
+                display: inline;
+            }
+        }
+    </style>
+</body>
+
+</html>

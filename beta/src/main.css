@@ -1,0 +1,157 @@
+body{
+    background-color: #f8eded;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mobileHide{ 
+    display: none;
+    /* position: absolute; */
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+.nav{
+    background-color: #ffffff;
+    margin: auto;
+    /* text-align: center; */
+}
+.logo{
+    height: 10vw;
+    max-height: 100px;
+    margin: auto;
+    padding: 5px;
+}
+.heros{
+    width: 100vw;
+}
+.heros img{
+    width: 100vw;
+}
+.hero-nav{
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+.hero-nav h3{
+    margin: 0%;
+}
+.dash{
+    margin: 10px;
+}
+.dash-text{
+    margin-left: 10px;
+}
+.dash-text h4{
+    margin: 0%;
+}
+
+.dash-table{
+    table-layout: fixed;
+    width: 100%;  
+    /* background-color: antiquewhite; */
+}
+
+.dash-table tr{
+    height: 95px;
+}
+td{
+    border: 7px solid #f8eded;
+    font-size: 80%;
+    font-weight: bold;
+}
+td h1{
+    margin: 0%;
+}
+.dash-table tr td{
+    background-color: #000;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    /* width: 95px; */
+}
+.dash-table .ext{
+    background-color: #0EC9C4;
+}
+.reg:hover{
+    background-color: black;
+}
+.app{
+    text-align: center;
+    width: 100%;
+}
+.app a{
+    text-decoration: none;
+    color: #0EC9C4;
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+}
+.wish{
+    margin: 2%;
+    border: 4px solid #0EC9C4;
+    width: fit-content;
+    padding: 0% 2%;
+    border-radius: 10px;
+    background-color: #0EC9C4;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom-left-radius: 0%;
+    /* text-align: right; */
+}
+.wish:hover{
+    animation: pop 0.3s linear 1;
+}
+@keyframes wish{
+    50%  {transform: scale(1.2);}
+}
+.notice, .notice-block, .notice-block td{
+    margin: 0%;
+    padding: 0%;
+    border: 0px solid black;
+    /* background-color: black; */
+}
+
+footer h4{
+    margin: 0%;
+    padding: 0%;
+}
+.notice-text{
+    width: 100%;
+    padding: 0%;
+    background-color: #ffffff;
+    color: black;
+    margin: 0%;
+}
+.notice{
+    /* border-top: 2px solid #ffffff; */
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+.notice-cell, .notice-cell h4{
+    color: #0EC9C4;
+    margin: 0%;
+    padding: 4px 8px;
+}
