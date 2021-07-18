@@ -91,17 +91,18 @@
         /* The dots/bullets/indicators */
         .dot {
             /* cursor: pointer; */
-            height: 10px;
-            width: 10px;
+            height: 4px;
+            width: 20px;
             margin: 0 5px;
+            /* padding-top: -20px; */
             background-color: rgb(255, 255, 255);
-            border-radius: 50%;
+            border-radius: 10px;
             display: inline-block;
             transition: background-color 0.6s ease;
         }
 
         .active {
-            background-color: #ffffff8a;
+            background-color: #ff0000;
         }
 
         /* Fading animation */
@@ -155,10 +156,12 @@
         <img class="logo" src="src/logo new.png">
     </header>
 
+
     <div class="mobileHide" style="color: red;">
         <div class="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <strong><img src="src/warning.gif" style="width: 35px;">Warning!</strong> This is a mobile only site. Please open url on mobile device or download our app.
+            <strong><img src="src/warning.gif" style="width: 35px;">Warning!</strong> This is a mobile only site. Please
+            open url on mobile device or download our app.
         </div>
     </div>
 
@@ -220,7 +223,13 @@
     </div>
 
 
-
+    <a class="weatherwidget-io" href="https://forecast7.com/en/23d7685d88/kathara/" data-label_1="KATHARA"
+        data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="pure"
+        data-basecolor="rgba(255, 255, 255, 0)" data-textcolor="#ffffff" data-mooncolor="#ffe600"
+        data-cloudcolor="#ffffff" data-cloudfill="rgba(249, 247, 247, 0)" style="width: 90%; margin: auto;">KATHARA WEATHER</a>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
 
 
 
@@ -237,15 +246,16 @@
         <span>
             <table class="dash-table" table-layout="fixed" cellspacing="12">
                 <tr>
-                    <td class="ext reg" colspan="2" onclick="location.href='https://zfrmz.in/ptiTSO19N1pxfdjTAaAU'">
+                    <td class="ext reg" style="background-color: rgb(255, 0, 136);" colspan="2"
+                        onclick="location.href='https://zfrmz.in/ptiTSO19N1pxfdjTAaAU'">
                         <h1>Register Now</h1>
                     </td>
-                    <td style="background-color: rgb(156, 2, 2);">Class Schedule</td>
-                    <td style="background-color: rgb(0, 38, 255);">Fee Structure</td>
+                    <td style="background-color: rgb(255, 136, 0);">Class Schedule</td>
+                    <td style="background-color: rgb(153, 0, 255);">Fee Structure</td>
                 </tr>
                 <tr>
-                    <td style="background-color: rgb(255, 81, 0);">About Us</td>
-                    <td style="background-color: rgb(255, 0, 200);">Our Vision</td>
+                    <td style="background-color: rgb(0, 185, 86);">About Us</td>
+                    <td style="background-color: rgb(251, 255, 0); color: black;">Our Vision</td>
                     <td style="background-color: rgb(15, 158, 2);">Founder's Message</td>
                     <td style="background-color: rgb(255, 60, 0);">Mentor's Details</td>
                 </tr>
@@ -255,18 +265,26 @@
                     <td style="background-color: rgb(216, 152, 3);">Contact Us</td>
                     <td style="background-color: rgb(0, 0, 0);" class="ext">Student's Dashboard</td>
                 </tr>
-                <tr>
-                    <td style="background-color: rgb(255, 0, 0); font-size: larger; text-align: center;" colspan="2">
+                <tr style="height: fit-content;">
+                    <td style="background-color: rgb(255, 0, 0); font-size: larger; text-align: center; color:  rgb(255, 255, 255);"
+                        colspan="2">
                         Complaint</td>
-                    <td style="background-color: rgb(6, 65, 192); font-size: larger; text-align: center;" colspan="2">
+                    <td style="background-color: rgb(255, 255, 255); font-size: larger; text-align: center; color: black;"
+                        colspan="2">
                         Feedback</td>
                 </tr>
             </table>
         </span>
     </div>
+
+
     <div class="app">
-        <h4>Download our Android app - <a href="https://bit.ly/am_kta_app">click here</a></h4>
+        <h4>Download our Android app | <a href="https://bit.ly/am_kta_app"
+                style="background-color: white; padding: 1px 5px; color: black; border-radius: 10px;">click here</a>
+        </h4>
     </div>
+
+
 
     <div style="height: 100px; width: 100vw;">
         <!-- spacing -->
@@ -284,8 +302,10 @@
                 <td class="notice-text">
                     <h4>
                         <marquee>
-                            <img src='src/woman_running.gif' style='width: 30px;'>Latest Fee Structure is uploaded on 31/03/2021 &nbsp; | &nbsp;
-                            <img src='src/person_biking.gif' style='width: 30px;'>Admission for class 8 - 12 are open for session 2021-22 &nbsp;
+                            <img src='src/woman_running.gif' style='width: 30px;'>Latest Fee Structure is uploaded on
+                            31/03/2021 &nbsp; | &nbsp;
+                            <img src='src/person_biking.gif' style='width: 30px;'>Admission for class 8 - 12 are open
+                            for session 2021-22 &nbsp;
                         </marquee>
                     </h4>
                 </td>
@@ -329,24 +349,24 @@
     <script>
         var slideIndex = 0;
         showSlides();
-        
+
         function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 5000); // Change image every 2 seconds
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
-        </script>
+    </script>
 </body>
 
 </html>
