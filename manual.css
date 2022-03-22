@@ -11,10 +11,10 @@
 } */
 #notice::before{
     /* write the content of first page notice inside double quotes below */
-    content:"Latest Fee Structure Uploaded (31/03/2021) | 2021 Registration is now available for Classes 8 to 12 | ";
+    content:"2022 Registration is now available for Classes 8 to 12 | Check Latest Fee Structure Below |";
 }
 #siteUpdate:after{
      font-weight: bold;
      font-size: xx-small;
-     content:" (SITE UPDATED ON : 31 March 2021)";
+     content:" (SITE UPDATED ON : 22 March 2022)";
 }
