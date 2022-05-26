@@ -501,4 +501,34 @@ a{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-  
+
+.loader{
+    width: 20px;
+    height: 20px;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #16213d; /* Blue */
+    color: #16213d;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 35vh;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.developer{
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 100vw;
+}
+.developer img{
+    width: 30vw;
+    max-width: 100px;
+}
