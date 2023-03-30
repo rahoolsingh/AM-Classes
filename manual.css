@@ -11,10 +11,10 @@
 } */
 #notice::before{
     /* write the content of first page notice inside double quotes below */
-    content:'2022 Registration is now open for Classes 8 to 12 | Check Latest Fee Structure in "FEE STRUCTURE" section above. |';
+    content:'2022 Registration is now open for Classes 6 to 12 | Check Latest Fee Structure in "FEE STRUCTURE" section above. |';
 }
 #siteUpdate:after{
      font-weight: bold;
      font-size: xx-small;
-     content:" (SITE UPDATED ON : 22 March 2022)";
+     content:" (SITE UPDATED ON : 30 March 2023)";
 }
