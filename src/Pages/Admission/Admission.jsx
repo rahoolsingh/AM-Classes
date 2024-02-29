@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Admission() {
     const [timer, setTimer] = useState(10);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -31,6 +30,7 @@ function Admission() {
                 seconds, please{" "}
                 <Link
                     to={"https://forms.gle/okrwfNVvNGghCq236"}
+                    target="_blank"
                     className="text-red-700 underline"
                 >
                     click here
