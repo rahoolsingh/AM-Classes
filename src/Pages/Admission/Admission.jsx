@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Admission() {
-    const [timer, setTimer] = useState(10);
+    const [timer, setTimer] = useState(5);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
