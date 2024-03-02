@@ -11,13 +11,13 @@ import Admission from "./Pages/Admission/Admission.jsx";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "",
         element: <Layout />,
         children: [
-            { path: "", element: <Home /> },
-            { path: "about", element: <About /> },
-            { path: "admission", element: <Admission /> },
-            { path: "contact", element: <Contact /> },
+            { path: "/", element: <Home /> },
+            { path: "/about", element: <About /> },
+            { path: "/admission", element: <Admission /> },
+            { path: "/contact", element: <Contact /> },
             { path: "*", element: <NotFound /> },
         ],
     },
