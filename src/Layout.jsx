@@ -2,6 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar.jsx";
 
 function Layout() {
+    console.log(import.meta.env.VITE_APPWRITE_ENDPOINT)
     return (
         <div className="text-black dark:bg-black dark:text-white p-2 w-full flex flex-col gap-2">
             <div className="overflow-hidden rounded">
