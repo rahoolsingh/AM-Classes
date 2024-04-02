@@ -8,7 +8,7 @@ import About from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import NotFound from "./Pages/NotFound/NotFound.jsx";
 import Admission from "./Pages/Admission/Admission.jsx";
-import Login from "./Pages/Login.jsx";
+import Login from "./Pages/Login/Login.jsx";
 
 const router = createBrowserRouter([
     {
@@ -20,9 +20,9 @@ const router = createBrowserRouter([
             { path: "about", element: <About /> },
             { path: "admission", element: <Admission /> },
             { path: "contact", element: <Contact /> },
-            { path: "login", element: <Login /> },
         ],
     },
+    { path: "login", element: <Login /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
