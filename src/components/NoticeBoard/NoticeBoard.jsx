@@ -45,16 +45,18 @@ function NoticeBoard() {
                 )}
                 {!loading && (
                     <div className="h-full overflow-y-scroll rounded space-y-2">
-                        {noticeData?.map((data) => (
-                            <>
+                        {noticeData
+                            ?.sort(
+                                (a, b) => new Date(b.date) - new Date(a.date)
+                            )
+                            ?.map((data) => (
                                 <Notice
                                     date={data.date}
-                                    message={data.content}
+                                    content={data.content}
                                     title={data.title}
                                     key={data.id}
                                 />
-                            </>
-                        ))}
+                            ))}
                     </div>
                 )}
             </Card>

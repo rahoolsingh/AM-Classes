@@ -8,10 +8,14 @@ function CarouselHero() {
                 rightControl={<></>}
                 indicators={false}
             >
-                {[...Array(5).keys()].map((i) => (
+                {[...Array(4).keys()].map((i) => (
                     <img
                         key={i}
-                        src={"https://raw.githubusercontent.com/rahoolsingh/AM-Classes/master/src/assets/heroImages/hero_" + i + ".png"}
+                        src={
+                            "https://raw.githubusercontent.com/rahoolsingh/AM-Classes/master/src/assets/heroImages/hero_" +
+                            i +
+                            ".png"
+                        }
                     />
                 ))}
             </Carousel>

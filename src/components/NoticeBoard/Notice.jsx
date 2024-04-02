@@ -1,7 +1,21 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
-function Notice({ date, message, title }) {
-    date = new Date(date).toLocaleDateString();
+function Notice({ date, content, title }) {
+    date = new Date(date).toLocaleDateString("en-IN");
+    // trime message to 100 characters
+    const [message, setMessage] = useState(content.slice(0, 100) + "...");
+    const [buttonText, setButtonText] = useState("Show More");
+
+    const handleShowMessage = () => {
+        if (buttonText === "Show Less") {
+            setMessage(content.slice(0, 100) + "...");
+            setButtonText("Show More");
+            return;
+        }
+        setMessage(content);
+        setButtonText("Show Less");
+    };
 
     if (message)
         return (
@@ -15,6 +29,12 @@ function Notice({ date, message, title }) {
                         <p className="text-sm text-justify">{message}</p>
                     </div>
                 </div>
+                <button
+                    onClick={handleShowMessage}
+                    className="text-sm font-medium text-blue-700"
+                >
+                    {buttonText}
+                </button>
             </div>
         );
 }
@@ -23,6 +43,6 @@ export default Notice;
 
 Notice.propTypes = {
     date: PropTypes.string,
-    message: PropTypes.string,
+    content: PropTypes.string,
     title: PropTypes.string,
 };

@@ -1,5 +1,5 @@
 import conf from "../config/config";
-import { Client, Databases } from "appwrite";
+import { Client, Databases, Query } from "appwrite";
 
 class NoticeService {
     client = new Client();
@@ -15,7 +15,7 @@ class NoticeService {
     async getNotices() {
         return await this.database.listDocuments(
             conf.appwriteDatabaseId,
-            conf.appwriteCollectionId
+            conf.appwriteCollectionId,
         );
     }
 
