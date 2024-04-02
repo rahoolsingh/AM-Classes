@@ -1,7 +1,7 @@
 import conf from "../config/config";
 import { Client, Account, ID } from "appwrite";
 
-export class AuthService {
+class AuthService {
     client = new Client();
     account;
     constructor() {
@@ -45,7 +45,6 @@ export class AuthService {
     }
 }
 
-const authService = new AuthService();
+export const authService = new AuthService();
 
-export { authService };
 export default AuthService;

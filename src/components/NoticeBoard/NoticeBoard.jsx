@@ -1,10 +1,26 @@
 import { Card, Spinner } from "flowbite-react";
 import Notice from "./Notice";
 import { useEffect, useState } from "react";
+import { noticeService } from "../../appwrite/notice";
 
 function NoticeBoard() {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [noticeData, setNoticeData] = useState([]);
+
+    useEffect(() => {
+        setLoading(true);
+        noticeService
+            .getNotices()
+            .then((response) => {
+                setNoticeData(response.documents);
+                console.log(response.documents);
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.error(error);
+                setLoading(false);
+            });
+    }, []);
 
     return (
         <div className="h-96 sm:h-96 rounded-lg overflow-hidden">
@@ -28,18 +44,17 @@ function NoticeBoard() {
                     </div>
                 )}
                 {!loading && (
-                    <div className="flow-root h-full overflow-y-scroll bg-zinc-100 rounded">
-                        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-                            {noticeData?.map((data) => (
-                                <span key={data.id}>
-                                    <Notice
-                                        date={data.date}
-                                        message={data.message}
-                                    />
-                                </span>
-                            ))}
-                            <p>Test</p>
-                        </ul>
+                    <div className="h-full overflow-y-scroll rounded space-y-2">
+                        {noticeData?.map((data) => (
+                            <>
+                                <Notice
+                                    date={data.date}
+                                    message={data.content}
+                                    title={data.title}
+                                    key={data.id}
+                                />
+                            </>
+                        ))}
                     </div>
                 )}
             </Card>
