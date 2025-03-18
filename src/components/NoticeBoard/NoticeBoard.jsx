@@ -1,44 +1,58 @@
 import { Card, Spinner } from "flowbite-react";
 import Notice from "./Notice";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function NoticeBoard() {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [noticeData, setNoticeData] = useState([]);
 
     return (
         <div className="h-96 sm:h-96 rounded-lg overflow-hidden">
-            {/* <button className="m-5" onClick={createNotice}>TEST</button> */}
-            <Card className="w-full h-full">
-                <div className="mb-4 flex items-center justify-between">
-                    <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
+            <Card className="w-full h-full shadow-lg">
+                <div className="mb-4 flex items-center justify-between border-b pb-2">
+                    <h5 className="text-xl font-bold text-gray-900 dark:text-white">
                         Latest Notifications
                     </h5>
-                    <a
-                        href="#"
+                    <Link
+                        to="/notifications"
                         className="text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-500"
                     >
                         View all
-                    </a>
+                    </Link>
                 </div>
-                {loading && (
-                    <div className="flex h-full justify-center items-center gap-3 select-none">
-                        <Spinner />
-                        <span>Loading Notice</span>
+                {loading ? (
+                    <div className="flex h-full justify-center items-center gap-3">
+                        <Spinner size="lg" />
+                        <span className="text-gray-600 dark:text-gray-300">
+                            Loading Notices...
+                        </span>
                     </div>
-                )}
-                {!loading && (
-                    <div className="flow-root h-full overflow-y-scroll bg-zinc-100 rounded">
+                ) : (
+                    <div className="flow-root h-full overflow-y-auto bg-gray-50 dark:bg-gray-800 rounded p-4">
                         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-                            {noticeData?.map((data) => (
-                                <span key={data.id}>
-                                    <Notice
-                                        date={data.date}
-                                        message={data.message}
-                                    />
-                                </span>
-                            ))}
-                            <p>Test</p>
+                            <li className="py-3">
+                                <p className="flex items-center gap-2 text-sm">
+                                    <span>
+                                        2025-26 Admission Open for Classes 5 to
+                                        12
+                                    </span>
+                                    <Link
+                                        to="/admission"
+                                        className="text-blue-600 font-semibold hover:underline"
+                                    >
+                                        Apply Now
+                                    </Link>
+                                    <span className="text-xs text-red-500 font-bold animate-pulse">
+                                        NEW
+                                    </span>
+                                </p>
+                            </li>
+                            <li className="py-3">
+                                <p className="text-sm">
+                                    English & S.St. Subjects are now available*
+                                </p>
+                            </li>
                         </ul>
                     </div>
                 )}
