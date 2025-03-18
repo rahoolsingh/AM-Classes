@@ -8,10 +8,16 @@ const images = [image1, image2, image3, image4];
 
 function CarouselHero() {
     return (
-        <div className="h-52 sm:h-96 rounded-lg overflow-hidden bg-white p-2">
-            <Carousel>
+        <div className="aspect-video rounded-lg overflow-hidden bg-white p-2 object-fill">
+            <Carousel
+            className="h-full"
+            autoplay={true}
+            autoplaySpeed={5000}
+            indicators={false}
+            infinite={true}
+            >
                 {images.map((image, index) => (
-                    <img src={image} alt={`Slide ${index + 1}`} />
+                    <img className="bg-red-500 h-full object-cover" src={image} alt={`Slide ${index + 1}`} />
                 ))}
             </Carousel>
         </div>
