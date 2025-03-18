@@ -13,14 +13,14 @@ function NavBar() {
     return (
         <div>
             <nav className="bg-white dark:bg-gray-900 w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-                <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-4">
+                <div className="flex flex-wrap items-center justify-between mx-auto p-2 sm:px-4">
                     <NavLink
                         to="/"
                         className="flex items-center space-x-3 rtl:space-x-reverse"
                     >
                         <img
                             src={logoPc}
-                            className="h-14 hidden sm:block"
+                            className="h-full max-h-20 hidden sm:block"
                             alt="Flowbite Logo"
                         />
                         <img
