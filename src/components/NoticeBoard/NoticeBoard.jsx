@@ -36,13 +36,13 @@ function NoticeBoard() {
                                     <span>
                                         2025-26 Admission Open for Classes 5 to
                                         12
+                                        <Link
+                                            to="/admission"
+                                            className="text-blue-600 font-semibold hover:underline"
+                                        >
+                                            Apply Now
+                                        </Link>
                                     </span>
-                                    <Link
-                                        to="/admission"
-                                        className="text-blue-600 font-semibold hover:underline"
-                                    >
-                                        Apply Now
-                                    </Link>
                                     <span className="text-xs text-red-500 font-bold animate-pulse">
                                         NEW
                                     </span>
