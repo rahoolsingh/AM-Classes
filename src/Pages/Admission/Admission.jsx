@@ -15,21 +15,21 @@ function Admission() {
 
     useEffect(() => {
         if (!timer) {
-            window.open("https://forms.gle/okrwfNVvNGghCq236", "_blank");
+            window.open("https://forms.zohopublic.in/amclasseskathara2016gm1/form/CourseApplication/formperma/SBypOyXtufuGqzuQvmzhZ8FWiTx9lnxmsBs5QFkl_9A", "_blank");
         }
     }, [timer]);
 
     return (
         <div className="bg-white rounded h-[calc(100vh-150px)] p-10 sm:p-24 space-y-4 sm:space-y-6">
             <h1 className="text-xl md:text-3xl lg:text-4xl font-bold">
-                Admissions for the academic year 2024-25 are open for classes VI
+                Admissions for the academic year 2025-26 are open for classes V
                 to XII.
             </h1>
             <p className=" font-medium">
                 If you don&apos;t get redirected automatically within {timer}{" "}
                 seconds, please{" "}
                 <Link
-                    to={"https://forms.gle/okrwfNVvNGghCq236"}
+                    to={"https://forms.zohopublic.in/amclasseskathara2016gm1/form/CourseApplication/formperma/SBypOyXtufuGqzuQvmzhZ8FWiTx9lnxmsBs5QFkl_9A"}
                     target="_blank"
                     className="text-red-700 underline"
                 >

@@ -5,7 +5,7 @@ function HighlightAlert({ link }) {
     return (
         <div className="flex justify-between p-4 bg-blue-600 text-white rounded-lg items-center gap-2">
             <span className="text-sm sm:text-base font-medium">
-                Admission for session 2024 - 25 is now open for classes 6 to 12.
+                Admission for session 2025 - 26 is now open for classes 5 to 12.
             </span>
             {link && (
                 <Link
