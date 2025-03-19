@@ -8,7 +8,7 @@ function NoticeBoard() {
     const [noticeData, setNoticeData] = useState([]);
 
     return (
-        <div className="h-96 sm:h-96 rounded-lg overflow-hidden">
+        <div className="min-h-96 h-full rounded-lg overflow-hidden">
             <Card className="w-full h-full shadow-lg">
                 <div className="mb-4 flex items-center justify-between border-b pb-2">
                     <h5 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -35,7 +35,7 @@ function NoticeBoard() {
                                 <p className="flex items-center gap-2 text-sm">
                                     <span>
                                         2025-26 Admission Open for Classes 5 to
-                                        12
+                                        12{" "}
                                         <Link
                                             to="/admission"
                                             className="text-blue-600 font-semibold hover:underline"
